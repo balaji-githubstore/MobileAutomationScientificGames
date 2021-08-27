@@ -58,6 +58,7 @@ public class NativeApp6Test {
 
 		driver.findElementByXPath("//*[@text='CREATE']").click();
 
+		
 		Thread.sleep(5000);
 		driver.quit();
 	}
