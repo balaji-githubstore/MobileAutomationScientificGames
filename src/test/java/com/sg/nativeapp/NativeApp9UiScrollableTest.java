@@ -34,9 +34,14 @@ public class NativeApp9UiScrollableTest {
 		
         
         visibleText = "Asia";
-        driver.findElementByAndroidUIAutomator
-        ("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"" + visibleText + "\").instance(0))").click();
-		
+        WebElement ele= driver.findElementByAndroidUIAutomator
+        ("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"" + visibleText + "\").instance(0))");
+        
+        
+//        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollTextIntoView(\"Art of Asia\")").click();
+       
+        
+        ele.click();
 	}
 
 }
