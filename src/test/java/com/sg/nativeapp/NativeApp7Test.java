@@ -34,10 +34,7 @@ public class NativeApp7Test {
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		while(driver.findElementsByXPath("//*[@text='Arts and humanities']").size()==0)
 		{
-			//scroll
-			HashMap<String, String> map=new HashMap<>();
-			map.put("command", "input touchscreen swipe 1000 1300 1000 1100");
-			driver.executeScript("mobile:shell", map);
+			driver.executeScript("mobile:shell", ImmutableMap.of("command","input touchscreen swipe 1000 1300 1000 1100"));
 		}
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElementByXPath("//*[@text='Arts and humanities']").click();
