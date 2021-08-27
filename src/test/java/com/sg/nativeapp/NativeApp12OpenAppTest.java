@@ -15,13 +15,18 @@ public class NativeApp12OpenAppTest {
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setCapability("platformName", "android");
 		cap.setCapability("deviceName", "bala");
-		cap.setCapability("appPackage","org.khanacademy.android");
-		cap.setCapability("appActivity","org.khanacademy.android.ui.library.MainActivity");
 		
+//		cap.setCapability("appPackage","org.khanacademy.android");
+//		cap.setCapability("appActivity","org.khanacademy.android.ui.library.MainActivity");
 		
+		cap.setCapability("appPackage","com.application.zomato");
+		cap.setCapability("appActivity","com.application.zomato.activities.ShowLeaderboard");
+		
+		cap.setCapability("noReset", true);
 		
 		AndroidDriver<WebElement> driver=new AndroidDriver<WebElement>(new URL("http://localhost:4723/wd/hub"), cap);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 		
 
 	}
