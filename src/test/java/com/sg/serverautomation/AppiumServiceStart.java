@@ -15,7 +15,7 @@ public class AppiumServiceStart {
 		
 		AppiumServiceBuilder builder=new AppiumServiceBuilder()
 				.usingAnyFreePort()
-				.withLogFile(new File("appiumlog.log"))
+				.withLogFile(new File("log/appiumlog.log"))
 				.withArgument(GeneralServerFlag.RELAXED_SECURITY)
 				.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
 				//below for mac machine

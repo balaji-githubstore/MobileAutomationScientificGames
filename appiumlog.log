@@ -1,0 +1,18 @@
+2021-08-28 05:25:10:335 [Appium] Welcome to Appium v1.21.0
+2021-08-28 05:25:10:336 [Appium] Non-default server args:
+2021-08-28 05:25:10:336 [Appium]   port: 21047
+2021-08-28 05:25:10:337 [Appium]   logFile: D:\B-Mine\Company\Company\Scientific Games3\appium_workspace\MobileAutomation\appiumlog.log
+2021-08-28 05:25:10:337 [Appium]   relaxedSecurityEnabled: true
+2021-08-28 05:25:10:378 [Appium] Appium REST http interface listener started on 0.0.0.0:21047
+2021-08-28 05:25:10:792 [HTTP] --> GET /wd/hub/status
+2021-08-28 05:25:10:793 [HTTP] {}
+2021-08-28 05:25:10:795 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-08-28 05:25:10:796 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-08-28 05:25:10:802 [HTTP] <-- GET /wd/hub/status 200 8 ms - 68
+2021-08-28 05:25:10:803 [HTTP] 
+2021-08-28 05:25:28:795 [HTTP] --> GET /wd/hub/status
+2021-08-28 05:25:28:796 [HTTP] {}
+2021-08-28 05:25:28:796 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-08-28 05:25:28:797 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-08-28 05:25:28:799 [HTTP] <-- GET /wd/hub/status 200 3 ms - 68
+2021-08-28 05:25:28:799 [HTTP] 
