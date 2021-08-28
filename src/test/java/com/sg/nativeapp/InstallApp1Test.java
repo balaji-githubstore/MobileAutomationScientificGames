@@ -17,7 +17,7 @@ public class InstallApp1Test {
 		cap.setCapability("deviceName", "bala");
 		cap.setCapability("app", "D:\\B-Mine\\Company\\Company\\Scientific Games3\\appium_workspace\\MobileAutomation\\apk\\Khan Academy_v6.3.0_apkpure.com.apk");
 		
-		AndroidDriver<WebElement> driver=new AndroidDriver<WebElement>(new URL("http://localhost:4723/wd/hub"), cap);
+		AndroidDriver<WebElement> driver=new AndroidDriver<WebElement>(new URL("http://localhost:5300/wd/hub"), cap);
 		
 		
 
