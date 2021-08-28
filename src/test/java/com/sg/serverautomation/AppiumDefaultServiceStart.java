@@ -9,8 +9,8 @@ public class AppiumDefaultServiceStart {
 		//always starts with default port 4723
 		
 		AppiumDriverLocalService service=AppiumDriverLocalService.buildDefaultService();  
-start();
-		service.
+
+		service.start();
 		
 		System.out.println(service.isRunning());
 		System.out.println(service.getUrl());
