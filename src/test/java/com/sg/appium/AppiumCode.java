@@ -6,9 +6,9 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.time.LocalDate;
 import java.util.Base64;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -65,7 +65,7 @@ public class AppiumCode {
 		String encoded = driver.stopRecordingScreen();
 
 		byte[] decoded = Base64.getDecoder().decode(encoded);
-		FileOutputStream file=new FileOutputStream("video.mp4");
+		FileOutputStream file=new FileOutputStream("video/video_"+LocalDate.now().toString()+".mp4");
 		file.write(decoded);
 		
 		file.flush();

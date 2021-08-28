@@ -20,7 +20,7 @@ public class NativeApp12OpenAppTest {
 //		cap.setCapability("appActivity","org.khanacademy.android.ui.library.MainActivity");
 		
 		cap.setCapability("appPackage","com.application.zomato");
-		cap.setCapability("appActivity","com.application.zomato.activities.ShowLeaderboard");
+		cap.setCapability("appActivity","com.application.zomato.activities.Splash");
 		
 		cap.setCapability("noReset", true);
 		
